@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stylePage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Airbnb Clone Gamma</title>
+</head>
+<body aria-busy="true">
+
+    <!-- navBar -->
+    <section class="navBar d-flex justify-content-end mr-5">
+    
+        <!-- logo -->
+        <a class="navbar-brand" href="home.html">
+             <img id="imgLogo"  src="img/logoAirbnb.jpg" alt="30" height="80">
+        </a>
+       
+        <div id="navBarPrincipal">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Hospede em sua acomodação <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Hospede uma experiência <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Ajuda <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Entrar <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastrar-se</a>
+                    </li>
+                
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+
+        </div>
+
+        
+    </section> 
+    <div class="row d-flex justify-content-end mr-5">
+        <button class="btn btn-primary btn-success mr-5 " onClick="location.href='home.html'">Paginaçao + Mapa </button>
+  
+   </div>
+   
+   <!-- form Check-in, check-out,search -->
+   <div class="formCheck ">
+        <form id="formSearch">
+            <div class="form-row">
+                <div class="col-md-4 mb-2">
+                    <label for="locationSearch">Localização</label>
+                    <input type="text" class="form-control pac-target-input" id="locationSearch" placeholder="Para onde você vai?" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Selecione uma localização
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="checkin">Check-In</label>
+                    <input type="date" class="form-control" id="checkinData">
+                    <div class="invalid-feedback date-fields">
+                        Selecione uma data de check-in
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="checkout">Check-Out</label>
+                    <input type="date" class="form-control" id="checkoutData">
+                    <div class="invalid-feedback date-fields">
+                        Selecione uma data de check-Out
+                    </div>
+                </div>
+                <div class="col div-btn-search btnCheckSearch">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>                            
+                        Buscar</button>
+                </div>
+            </div>
+        </form> 
+    </div>
+
+    <main class="conteudo mb-5">
+
+      <!-- Cards -->
+        <div  id="cards" class="row">
+        
+        </div>
+
+        
+        
+    </main>
+    
+
+    <script src="js/cardsList.js"></script>
+
+         
+
+
+<!-- Footer -->
+<footer class="page-footer mt-5">
+
+   
+    <!-- Copyright -->
+  
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="http://linkedin.com/in/leslie-cespedes-050565189" target="blank"> Leslie Cespedes Gamarra  </a>
+     
+
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+    
+        
+</body>
+</html>

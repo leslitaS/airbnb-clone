@@ -1,0 +1,263 @@
+<html>
+  <head>
+    <base target="_parent">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.5.14/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css">
+    <link rel="stylesheet" href="/css/stylePage.css">
+    <link rel="stylesheet" href="/css/map.css">
+    <style type="text/css">/* Chart.js */
+    @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
+    
+    <title>Airbnb Clone Gamma</title>
+  
+  
+
+
+</head>
+  
+<body aria-busy="true">  
+
+     <!-- form Check-in, check-out,search -->
+    <div class="formCheck ">
+            <!-- logo -->
+        <a class="navbar-brand" href="index.html">
+            <img id="imgLogo"  src="img/logoAirbnb.jpg" alt="30" height="80">
+        </a>
+        <div class="row d-flex justify-content-end">
+             <button class="btn btn-primary btn-success " onClick="location.href='index.html'">Lista Acomodacoes</button>
+       
+        </div>
+        
+        <form id="formSearch">
+            <div class="form-row">
+                <div class="col-md-4 mb-2">
+                    <label for="pac-input">Localização</label>
+                    <input id="pac-input" type="text" class="form-control pac-target-input"  placeholder="Para onde você vai?" autocomplete="off">
+                  
+                    <div class="invalid-feedback">
+                        Selecione uma localização
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="checkin">Check-In</label>
+                    <input type="date" class="form-control" id="checkinData">
+                    <div class="invalid-feedback date-fields">
+                        Selecione uma data de check-in
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="checkout">Check-Out</label>
+                    <input type="date" class="form-control" id="checkoutData">
+                    <div class="invalid-feedback date-fields">
+                        Selecione uma data de check-Out
+                    </div>
+                </div>
+                <div class="col div-btn-search btnCheckSearch">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>                            
+                        Buscar</button>
+                </div>
+            </div>
+        </form> 
+    </div>
+
+
+
+    <!--Inicio  Slide  -->
+    <div class="container my-4">
+  
+     
+      <hr class="my-4">
+  
+      <!--Carousel Wrapper-->
+      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+  
+        <!--Controls-->
+        <div class="controls-top">
+          <a class="btn-floating waves-effect waves-light" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating waves-effect waves-light" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <!--/.Controls-->
+  
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to="0" class=""></li>
+          <li data-target="#multi-item-example" data-slide-to="1" class="active"></li>
+          <li data-target="#multi-item-example" data-slide-to="2" class=""></li>
+        </ol>
+        <!--/.Indicators-->
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+            <div class="carousel-item"  >
+
+            <!-- cards -->
+                <div class="row" id="cards">
+                    
+                    <div class="row" id="slide1">
+
+                    </div>
+                
+                </div>
+  
+         
+            </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+            <div class="carousel-item active">
+                
+                <div class="row" id="slide2">
+
+                </div>
+    
+            </div>
+            <!--/.Second slide-->
+  
+               <!--Third slide-->
+           <div class="carousel-item">
+    
+                <div class="row" id="slide3">
+
+                </div>
+    
+           </div>
+            <!--/.Third slide-->
+
+             <!--fourth  slide-->
+            <div class="carousel-item">
+
+                <div class="row" id="slide4">
+
+                </div>
+                
+            </div>
+               <!--/.fourth  slide-->
+
+             <!--fifth   slide-->
+            <div class="carousel-item">
+
+                <div class="row" id="slide5">
+
+                </div>
+            
+            </div>
+              <!--/.fifth   slide-->
+        
+               <!--sixth    slide-->
+            <div class="carousel-item">
+
+                <div class="row" id="slide6">
+
+                </div>
+                    
+            </div>
+              <!--/.sixth    slide-->
+
+              <!--seventh     slide-->
+            <div class="carousel-item">
+
+                <div class="row" id="slide7">
+
+                </div>
+                    
+            </div>
+              <!--/.seventh     slide-->
+
+              <!--eighth      slide-->
+            <div class="carousel-item">
+
+                <div class="row" id="slide8">
+
+                </div>
+                    
+            </div>
+              <!--/.eighth      slide-->
+  
+        </div>
+        <!--/.Slides-->
+  
+      </div>
+      <!--/.Carousel Wrapper-->
+  
+  
+    </strong>
+    </div>
+    <!-- Fin Slide -->
+
+    <!-- Maps -->
+    <div id="maps" class="row d-flex justify-content-center">
+        <!--Google map-->
+        <div class="col-md-8"> 
+            
+            <div class="col div-btn-search btnCheckSearch">
+                <input id="pac-input" class="controls" type="text" placeholder="Para onde você vai?">
+                <button class="btn-mapa btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <span class="glyphicon glyphicon-search"></span>                            
+                    Buscar</button>
+            </div>
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                <iframe src="https://maps.google.com/maps?q=brasil&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+            </div>
+           
+        </div>
+    
+
+    <!--Google Maps-->
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script><script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.5.14/js/mdb.min.js"></script><div class="hiddendiv common"></div><script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"></script>
+    <script type="text/javascript"></script>
+
+    <script src="js/cards.js"></script>
+    <script src="js/functionMap.js"></script>
+  
+ 
+    <script>
+        function myMap() {
+        var mapProp= {
+        center:new google.maps.LatLng(51.508742,-0.120850),
+        zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+    </script>
+        
+        <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWLhwIKQRVpAVjvugz7FQifMSB8uCegSY&callback=initMap"
+            type="text/javascript"></script>  -->
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initAutocomplete"
+            async defer></script>
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer mt-5">
+
+   
+    <!-- Copyright -->
+  
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="http://linkedin.com/in/leslie-cespedes-050565189" target="blank"> Leslie Cespedes Gamarra  </a>
+     
+
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+  </html>
